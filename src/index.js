@@ -22,7 +22,6 @@ root.render(
   <Router>
     <Routes>
       <Route path="/connected-earth-museum/" element={<Home />} />
-      <Route path="/connected-earth-museum/connected-earth-museum" element={<Home />} />
       <Route path="/connected-earth-museum/Museum" element={<App />} />
       <Route path="/connected-earth-museum/earth" element={<Globe />} />
       <Route path="/connected-earth-museum/game" element={<Game />} />
