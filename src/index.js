@@ -21,17 +21,18 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/Museum" element={<App />} />
-      <Route path="/earth" element={<Globe />} />
-      <Route path="/game" element={<Game />} />
-      <Route path="/game/lost" element={<LoseScreen />} />
-      <Route path="/game/won" element={<WinScreen />} />
-      <Route path="/slides/slide_1" element={<Slideshow slideId="slide_1" />} />
-      <Route path="/slides/slide_2" element={<Slideshow slideId="slide_2" />} />
-      <Route path="/slides/slide_3" element={<Slideshow slideId="slide_3" />} />
-      <Route path="/map" element={<EarthMapContainer />} />
-      <Route path="/popmap" element={<PopMap />} />
+      <Route path="/connected-earth-museum/" element={<Home />} />
+      <Route path="/connected-earth-museum/connected-earth-museum" element={<Home />} />
+      <Route path="/connected-earth-museum/Museum" element={<App />} />
+      <Route path="/connected-earth-museum/earth" element={<Globe />} />
+      <Route path="/connected-earth-museum/game" element={<Game />} />
+      <Route path="/connected-earth-museum/game/lost" element={<LoseScreen />} />
+      <Route path="/connected-earth-museum/game/won" element={<WinScreen />} />
+      <Route path="/connected-earth-museum/slides/slide_1" element={<Slideshow slideId="slide_1" />} />
+      <Route path="/connected-earth-museum/slides/slide_2" element={<Slideshow slideId="slide_2" />} />
+      <Route path="/connected-earth-museum/slides/slide_3" element={<Slideshow slideId="slide_3" />} />
+      <Route path="/connected-earth-museum/map" element={<EarthMapContainer />} />
+      <Route path="/connected-earth-museum/popmap" element={<PopMap />} />
     </Routes>
   </Router>,
   document.getElementById('root')

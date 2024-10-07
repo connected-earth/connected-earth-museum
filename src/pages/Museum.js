@@ -12,7 +12,7 @@ const Museum = () => {
 
 
   const [narratorText, setNarratorText]   = useState("Hello visitor, welcome to the Connected Earth Museum. You can use the scroll wheel to move around the museum, or click the Next and Previous buttons to go through each painting in our museum. Here you will discover how the Earth's Systems are connected. Enjoy your visit!");
-  const [narratorVoice, setNarratorVoice] = useState("/audios/welcome.mp3");
+  const [narratorVoice, setNarratorVoice] = useState("/connected-earth-museum/audios/welcome.mp3");
 
   // const [fromPage1, setFromPage1] = useState(false);
   const location       = useLocation(); // Location of current page

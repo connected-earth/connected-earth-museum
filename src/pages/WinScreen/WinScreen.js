@@ -41,8 +41,8 @@ const WinScreen = () => {
           gap: 30
        }}
       >
-        <img src="/images/game/happy_earth.svg" alt="Sad Earth" style={{ maxWidth: '300px' }}/>
-        <img src="/images/game/astronaut.svg" alt="Sad Earth" style={{ maxWidth: '300px' }}/>
+        <img src="/connected-earth-museum/images/game/happy_earth.svg" alt="Sad Earth" style={{ maxWidth: '300px' }}/>
+        <img src="/connected-earth-museum/images/game/astronaut.svg" alt="Sad Earth" style={{ maxWidth: '300px' }}/>
       </div>
 
 

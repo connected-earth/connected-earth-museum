@@ -45,30 +45,30 @@ const MuseumScene = React.memo(({onObjectClick, onFinishLine, onPantingClick}) =
 
   //sound 
   // var backgroundSound = new Howl({
-  //   src: ["/audios/Maenam.mp3"],
+  //   src: ["/connected-earth-museum/audios/Maenam.mp3"],
   //   loop: true,
   //   autoplay: true,
   // })
   var welcome = new Howl({
-    src: ["/audios/Welcome.mp3"]
+    src: ["/connected-earth-museum/audios/Welcome.mp3"]
   })
   var painting1 = new Howl({
-    src: ["/audios/painting1.mp3"]
+    src: ["/connected-earth-museum/audios/painting1.mp3"]
   })
   var painting2 = new Howl({
-    src: ["/audios/painting2.mp3"]
+    src: ["/connected-earth-museum/audios/painting2.mp3"]
   })
   var painting3 = new Howl({
-    src: ["/audios/painting3.mp3"]
+    src: ["/connected-earth-museum/audios/painting3.mp3"]
   })
   var painting4 = new Howl({
-    src: ["/audios/painting4.mp3"]
+    src: ["/connected-earth-museum/audios/painting4.mp3"]
   })
   var painting5 = new Howl({
-    src: ["/audios/painting5.mp3"]
+    src: ["/connected-earth-museum/audios/painting5.mp3"]
   })
   var painting6e7 = new Howl({
-    src: ["/audios/painting6e7.mp3"]
+    src: ["/connected-earth-museum/audios/painting6e7.mp3"]
   })
 
   // Var to search Paintings
@@ -916,7 +916,7 @@ const MuseumScene = React.memo(({onObjectClick, onFinishLine, onPantingClick}) =
           "In this painting, you can see the relationships between Temperature, Carbon Emissions, Fires and Vegetation over the years. Click on the painting to view more.",
             painting1,
             10000,
-            "/earth"
+            "/connected-earth-museum/earth"
           );
         } else if(firstIntersectedObject.name === 'Painting_2') {
           handleFocusPainting(
@@ -929,7 +929,7 @@ const MuseumScene = React.memo(({onObjectClick, onFinishLine, onPantingClick}) =
           "You might have noticed how Earth’s systems are connected. Now, we take a deeper look at this and explore with data how one aspect of the planet influences the others. Click on the painting to view more.",
             painting2,
             4000,
-            "/slides/slide_1"
+            "/connected-earth-museum/slides/slide_1"
           );
         } else if(firstIntersectedObject.name === 'Painting_3') {  // not 
           handleFocusPainting(
@@ -942,7 +942,7 @@ const MuseumScene = React.memo(({onObjectClick, onFinishLine, onPantingClick}) =
           "One of the gravest problems our planet faces is uncontrolled wildfires. We will now take a look at how these incidents are spread throughout our planet. Click on the painting to view more. ",
             painting3,
             14000,
-            "/map"
+            "/connected-earth-museum/map"
           );
         }  /* else if(firstIntersectedObject.name === 'Painting_4') {
           handleFocusPainting(
@@ -955,7 +955,7 @@ const MuseumScene = React.memo(({onObjectClick, onFinishLine, onPantingClick}) =
           "One of the gravest problems our planet faces is uncontrolled wildfires. We will now take a look at how these incidents are spread throughout our planet. Click on the painting to view more. ",
             painting3,
             14000,
-            "/slides/slide_2"
+            "/connected-earth-museum/slides/slide_2"
           );
         } */ else if(firstIntersectedObject.name === 'Painting_5') {
           handleFocusPainting(
@@ -968,7 +968,7 @@ const MuseumScene = React.memo(({onObjectClick, onFinishLine, onPantingClick}) =
           "Sometimes, we forget that humans are also part of the Earth. As such, humanity exerts a lot of influence on Earth’s systems. We will take a deeper look into how that goes. Click on the painting to view more.",
             painting4,
             14000,
-            "/popmap"
+            "/connected-earth-museum/popmap"
           );
         } else if(firstIntersectedObject.name === 'Painting_6') {
           handleFocusPainting(
@@ -981,7 +981,7 @@ const MuseumScene = React.memo(({onObjectClick, onFinishLine, onPantingClick}) =
           " Let’s take a break from looking at data. How about a game to test your knowledge? Our planet is in need of your help, and you must answer questions correctly to help it. Click on the painting to play!",
             painting5,
             13000,
-            "/game"
+            "/connected-earth-museum/game"
           );
         } else if(firstIntersectedObject.name === 'Painting_7') { // no ?
           handleFocusPainting(
@@ -994,7 +994,7 @@ const MuseumScene = React.memo(({onObjectClick, onFinishLine, onPantingClick}) =
           "Now, back to a bit of data. How about some more information about everything we presented so far? Click on each of the paintings to learn more about our connected Earth.",
             painting6e7,
             11000,
-            "/slides/slide_3"
+            "/connected-earth-museum/slides/slide_3"
           );
         } else if(firstIntersectedObject.name === 'Painting_8') {
           handleFocusPainting(
@@ -1007,7 +1007,7 @@ const MuseumScene = React.memo(({onObjectClick, onFinishLine, onPantingClick}) =
           "Now, back to a bit of data. How about some more information about everything we presented so far? Click on each of the paintings to learn more about our connected Earth.",
             painting6e7,
             11000,
-            "/slides/slide_2"
+            "/connected-earth-museum/slides/slide_2"
           );
         } /*else if(firstIntersectedObject.name === 'Painting_9') { // no ?
           handleFocusPainting(
@@ -1020,7 +1020,7 @@ const MuseumScene = React.memo(({onObjectClick, onFinishLine, onPantingClick}) =
           "This is a test for the painting 9. I like painting1!",
             painting1,
             4000,
-            "/slides/slide_4"
+            "/connected-earth-museum/slides/slide_4"
           );
         } */
 

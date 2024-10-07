@@ -48,7 +48,7 @@ const LoseScreen = () => {
       }}>
       <h1 style={{ position: 'inherit', cursor: 'default' }}>You lost :(</h1>
 
-        <img src="/images/game/sad_earth.svg" alt="Sad Earth" style={{ maxWidth: '300px' }}/>
+        <img src="/connected-earth-museum/images/game/sad_earth.svg" alt="Sad Earth" style={{ maxWidth: '300px' }}/>
 
         <div style={{
           display: 'flex',

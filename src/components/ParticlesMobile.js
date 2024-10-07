@@ -104,7 +104,7 @@ const ParticlesComponentMobile = (props) => {
     //     },
     //     scale: 0.1,
     //     type: "inline",
-    //     url: "/icons/globe-inverted.svg"
+    //     url: "/connected-earth-museum/icons/globe-inverted.svg"
     //   },
       background: {
         color: "#21201f",

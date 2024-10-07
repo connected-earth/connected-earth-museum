@@ -9,12 +9,12 @@ export const page_slides = {
       {
         type: 3,
         background: {
-          url: "/images/slides/backgrounds/populationDensity.png",
+          url: "/connected-earth-museum/images/slides/backgrounds/populationDensity.png",
           alt: "Population Density",
         },
         graphs: [
           {
-            url: "/images/slides/graphs/global-land-use-graphic.jpeg",
+            url: "/connected-earth-museum/images/slides/graphs/global-land-use-graphic.jpeg",
             alt: "global-land-use-graphic.",
           }
         ],
@@ -26,16 +26,16 @@ export const page_slides = {
       {
         type: 4,
         background: {
-          url: "/images/slides/backgrounds/carbonFootprint.jpg",
+          url: "/connected-earth-museum/images/slides/backgrounds/carbonFootprint.jpg",
           alt: "Carbon fotprint",
         },
         graphs: [
           {
-            url: "/images/slides/graphs/global-greenhouse-gas-emissions.png",
+            url: "/connected-earth-museum/images/slides/graphs/global-greenhouse-gas-emissions.png",
             alt: "global greenhouse gas emissions",
           },
           {
-            url: "/images/slides/graphs/carbon-emission-graph.png",
+            url: "/connected-earth-museum/images/slides/graphs/carbon-emission-graph.png",
             alt: "carbon emission graph",
           }
 
@@ -49,7 +49,7 @@ export const page_slides = {
       {
         type: 2,
         background: {
-          url: "/images/slides/backgrounds/polution.png",
+          url: "/connected-earth-museum/images/slides/backgrounds/polution.png",
           alt: "Pollution",
         },
         title: "Pollution",
@@ -60,17 +60,17 @@ export const page_slides = {
       {
         type: 4,
         background: {
-          url: "/images/slides/backgrounds/carbonFootprint.jpg",
+          url: "/connected-earth-museum/images/slides/backgrounds/carbonFootprint.jpg",
           alt: "Carbon fotprint",
         },
         graphs: [
           {
-            url: "/images/slides/graphs/rising-temp-1.png",
+            url: "/connected-earth-museum/images/slides/graphs/rising-temp-1.png",
             maxWidth: '50%',
             alt: "rising temperature 1",
           },
           {
-            url: "/images/slides/graphs/rising-temp-2.png",
+            url: "/connected-earth-museum/images/slides/graphs/rising-temp-2.png",
             alt: "rising temperature 2",
           }
 
@@ -84,12 +84,12 @@ export const page_slides = {
       {
         type: 3,
         background: {
-          url: "/images/slides/backgrounds/populationDensity.png",
+          url: "/connected-earth-museum/images/slides/backgrounds/populationDensity.png",
           alt: "Population Density",
         },
         graphs: [
           {
-            url: "/images/slides/graphs/energy-go.jpg",
+            url: "/connected-earth-museum/images/slides/graphs/energy-go.jpg",
             alt: "energy go",
           }
         ],
@@ -101,12 +101,12 @@ export const page_slides = {
       {
         type: 3,
         background: {
-          url: "/images/slides/backgrounds/populationDensity.png",
+          url: "/connected-earth-museum/images/slides/backgrounds/populationDensity.png",
           alt: "Population Density",
         },
         graphs: [
           {
-            url: "/images/slides/graphs/forests.jpg",
+            url: "/connected-earth-museum/images/slides/graphs/forests.jpg",
             alt: "forests",
           }
         ],
@@ -123,11 +123,11 @@ export const page_slides = {
         title: "Deforestation in Bolivia",
         graphs: [
           {
-            url: "/images/slides/slider/before.jpg",
+            url: "/connected-earth-museum/images/slides/slider/before.jpg",
             alt: "Deforestation in Bolivia - before",
           },
           {
-            url: "/images/slides/slider/after.jpg",
+            url: "/connected-earth-museum/images/slides/slider/after.jpg",
             alt: "Deforestation in Bolivia - after",
           },
         ]
@@ -138,12 +138,12 @@ export const page_slides = {
       {
         type: 3,
         background: {
-          url: "/images/slides/backgrounds/polution.png",
+          url: "/connected-earth-museum/images/slides/backgrounds/polution.png",
           alt: "polution",
         },
         graphs: [
           {
-            url: "/images/slides/graphs/world-on-fire.png",
+            url: "/connected-earth-museum/images/slides/graphs/world-on-fire.png",
             alt: "world-on-fire",
           }
         ],
@@ -155,12 +155,12 @@ export const page_slides = {
       {
         type: 3,
         background: {
-          url: "/images/slides/backgrounds/populationDensity.png",
+          url: "/connected-earth-museum/images/slides/backgrounds/populationDensity.png",
           alt: "Population Density",
         },
         graphs: [
           {
-            url: "/images/slides/graphs/droughts-and-fire.jpg",
+            url: "/connected-earth-museum/images/slides/graphs/droughts-and-fire.jpg",
             alt: "world-on-fire",
           }
         ],
@@ -172,12 +172,12 @@ export const page_slides = {
       {
         type: 3,
         background: {
-          url: "/images/slides/backgrounds/populationDensity.png",
+          url: "/connected-earth-museum/images/slides/backgrounds/populationDensity.png",
           alt: "Background",
         },
         graphs: [
           {
-            url: "/images/slides/graphs/what-causes-the-fire.png",
+            url: "/connected-earth-museum/images/slides/graphs/what-causes-the-fire.png",
             alt: "what-causes-the-fire",
           }
         ],
@@ -189,7 +189,7 @@ export const page_slides = {
       {
         type: 2,
         background: {
-          url: "/images/slides/backgrounds/wild-fires.jpg",
+          url: "/connected-earth-museum/images/slides/backgrounds/wild-fires.jpg",
           alt: "wild fires",
         },
         graphs: [],
@@ -201,7 +201,7 @@ export const page_slides = {
       {
         type: 2,
         background: {
-          url: "/images/slides/backgrounds/smoke-wind.png",
+          url: "/connected-earth-museum/images/slides/backgrounds/smoke-wind.png",
           alt: "smoke wind",
         },
         graphs: [],
@@ -213,12 +213,12 @@ export const page_slides = {
       {
         type: 3,
         background: {
-          url: "/images/slides/backgrounds/airQuality.jpg",
+          url: "/connected-earth-museum/images/slides/backgrounds/airQuality.jpg",
           alt: "Air Quality",
         },
         graphs: [
           {
-            url: "/images/slides/graphs/air-quality.png",
+            url: "/connected-earth-museum/images/slides/graphs/air-quality.png",
             alt: "Air Quality",
           }
         ],
@@ -232,7 +232,7 @@ export const page_slides = {
       {
         type: 2,
         background: {
-          url: "/images/slides/backgrounds/carbonFootprint.jpg",
+          url: "/connected-earth-museum/images/slides/backgrounds/carbonFootprint.jpg",
           alt: "Carbon fotprint",
         },
         graphs: [],
@@ -244,7 +244,7 @@ export const page_slides = {
       {
         type: 2,
         background: {
-          url: "/images/slides/backgrounds/what-can-we-do.jpg",
+          url: "/connected-earth-museum/images/slides/backgrounds/what-can-we-do.jpg",
           alt: "What can we do?",
         },
         graphs: [],
@@ -256,7 +256,7 @@ export const page_slides = {
       {
         type: 2,
         background: {
-          url: "/images/slides/backgrounds/connected_earth.png",
+          url: "/connected-earth-museum/images/slides/backgrounds/connected_earth.png",
           alt: "What can we do?",
         },
         graphs: [],
@@ -268,7 +268,7 @@ export const page_slides = {
       {
         type: 2,
         background: {
-          url: "/images/slides/backgrounds/connected_earth.png",
+          url: "/connected-earth-museum/images/slides/backgrounds/connected_earth.png",
           alt: "What can we do?",
         },
         graphs: [],

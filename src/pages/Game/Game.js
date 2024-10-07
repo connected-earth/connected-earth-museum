@@ -391,7 +391,7 @@ const Game = () => {
   };
 
   return (
-    <div className="game-container" style={{ background: 'url("/images/game-background.jpg") no-repeat center / cover' }}>
+    <div className="game-container" style={{ background: 'url("/connected-earth-museum/images/game-background.jpg") no-repeat center / cover' }}>
       <div className="life">
         {new Array(FULL_LIFE).fill(0).map((_, idx) => (
           <Hearth color={idx + 1 > life ? '#000' : '#f00' } />
@@ -407,7 +407,7 @@ const Game = () => {
             <h2>{question.title}</h2>
 
             <div style={{ display: 'flex', flexDirection: 'row' }}>
-              <img src="/images/game/astronaut.svg" alt="Astronaut" width={100} /> 
+              <img src="/connected-earth-museum/images/game/astronaut.svg" alt="Astronaut" width={100} /> 
               <div>
                 {question.options.map((option) => (
                   <button onClick={() => handleFire({ question, option, idx })}>
