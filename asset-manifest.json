@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/connected-earth-museum/static/css/main.c531439d.css",
-    "main.js": "/connected-earth-museum/static/js/main.c18f74e4.js",
+    "main.js": "/connected-earth-museum/static/js/main.f9bceb39.js",
     "static/js/453.79b71281.chunk.js": "/connected-earth-museum/static/js/453.79b71281.chunk.js",
     "index.html": "/connected-earth-museum/index.html",
     "main.c531439d.css.map": "/connected-earth-museum/static/css/main.c531439d.css.map",
-    "main.c18f74e4.js.map": "/connected-earth-museum/static/js/main.c18f74e4.js.map",
+    "main.f9bceb39.js.map": "/connected-earth-museum/static/js/main.f9bceb39.js.map",
     "453.79b71281.chunk.js.map": "/connected-earth-museum/static/js/453.79b71281.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c531439d.css",
-    "static/js/main.c18f74e4.js"
+    "static/js/main.f9bceb39.js"
   ]
 }
