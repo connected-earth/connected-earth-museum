@@ -1,0 +1,77 @@
+.button-container-home {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  position: absolute;
+  margin: 0;
+  top: 2%;
+  left: 83vw;
+  z-index: 1;
+  
+  /* width: 220px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif; /* Use the closest font to the original */
+  font-size: 1rem;
+  cursor: pointer;
+  color: #FFFFFF; /* White text */
+  transition: color 0.3s ease; /* Smooth text color transition */
+  user-select: none;
+}
+
+  /* Circle */
+  .circle-home {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    left: -50px;
+    top: 50%;
+    transform: translateX(+83%);
+    border: 1px solid rgba(176, 176, 176, 0.0); /* Light circular border */
+    border-radius: 50%;
+    opacity: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: left 0.6s ease, border 0.6s ease, transform 0.6s ease; 
+    user-select: none; 
+  }
+  
+  /* Arrow */
+  .arrow-home {
+    font-size: 32px;
+    transform: translateY(-17%);
+    color: rgba(255, 255, 255, 0.0); /* Initially dim arrow */
+    transition: color 0.6s ease;
+    user-select: none; 
+  }
+  
+  /* Button Text */
+  #button-text-museum {
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 1); /* Text is dim initially */
+    transition: color 0.6s ease;
+    user-select: none; 
+  }
+  
+  /* Hover State */
+  .button-container-home:hover .circle-home {
+    opacity: 100%;
+    border: 2px solid rgba(255, 255, 255, 1); /* Full white border on hover */
+    transform: scale(1.1); /* Slightly enlarge the circle */
+    user-select: none; 
+  }
+  
+  .button-container-home:hover .arrow-home {
+    color: rgba(255, 255, 255, 1); /* Arrow becomes fully white */
+    user-select: none;
+  
+  }
+  
+  .button-container-home:hover .button-text-home {
+    color: rgba(255, 255, 255, 1); /* Text becomes fully white */
+    user-select: none; 
+  }
+  
+  

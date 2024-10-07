@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* overflow: hidden; */
+}
+
+.text-button-container {
+  color: rgba(255, 255, 255, 0.6);
+  width: 40%;
+}
+
+h1 { position: 'absolute'; 
+  top: '10px';
+  left: '10px';
+  z-index: 1;
+  color: 'black' 
+}
+
+/* p {
+  font-family: 'Arial', sans-serif;
+  font-size: small;
+  transform: translateX(-10px);
+} */
+
+/* Button Container */
+.button-container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif; /* Use the closest font to the original */
+  cursor: pointer;
+  color: #FFFFFF; /* White text */
+  transition: color 0.3s ease; /* Smooth text color transition */
+  user-select: none;
+}
+
+
+/* Circle */
+.circle {
+  width: 40px;
+  height: 40px;
+  left: -50px;
+  top: 50%;
+  transform: translateX(+83%);
+  border: 1px solid rgba(176, 176, 176, 0.6); /* Light circular border */
+  border-radius: 50%;
+  opacity: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  transition: left 0.6s ease, border 0.6s ease, transform 0.6s ease; 
+  user-select: none; 
+}
+
+/* Arrow */
+.arrow {
+  font-size: 32px;
+  transform: translateY(-16%);
+  color: rgba(255, 255, 255, 0.0); /* Initially dim arrow */
+  transition: color 0.6s ease;
+  position: absolute;
+  user-select: none; 
+}
+
+/* Button Text */
+.button-text {
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.6); /* Text is dim initially */
+  transition: color 0.6s ease;
+  user-select: none;
+  
+}
+
+/* Hover State */
+.button-container:hover .circle {
+  opacity: 100%;
+  border: 2px solid rgba(255, 255, 255, 1); /* Full white border on hover */
+  transform: scale(1.1); /* Slightly enlarge the circle */
+  user-select: none;
+  
+}
+
+.button-container:hover .arrow {
+  color: rgba(255, 255, 255, 1); /* Arrow becomes fully white */
+  user-select: none;
+}
+
+.button-container:hover .button-text {
+  color: rgba(255, 255, 255, 1); /* Text becomes fully white */
+  user-select: none;
+}
+
+
+
+
+
+
+.btn {
+  color: #000000;
+  cursor: pointer;
+  /* display: block; */
+  font-family: "Cinzel";
+  font-size:small;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  padding: 1%;
+  max-width: 160px; 
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%; 
+  
+  @media(min-width: 600px) {
+    margin: 0 1em 2em;
+  }
+  &:hover { text-decoration: none; }
+}
+
+.btn-5 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+
+.btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* win screen */
+
+.back-to-musem-custom-button {
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 100%;
+  max-width: 300px;
+  height: 3em;
+  padding: 8px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+.back-to-musem-custom-button:hover  {
+  background: #fff;
+  color: purple;
+}

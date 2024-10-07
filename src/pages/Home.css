@@ -1,0 +1,264 @@
+
+/* Canvas should cover the entire screen */
+/* .three-canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; 
+    background: linear-gradient(145deg, rgba(255, 0, 150, 0.5), rgba(0, 150, 255, 0.5));
+    filter: blur(120px);
+    overflow: hidden;
+} */
+
+/* Make sure root covers entire screen */
+/* body, html, #root {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+} */
+/*
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures content is centered vertically */ /*
+    text-align: center;
+    color: #000;
+    z-index: 1; /* Keeps text on top of background */ /*
+}
+*/
+
+
+/* h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 1.5;
+} */
+
+/* .heading-home {
+    position: absolute;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    margin: 0;
+    top: 20px;
+    left: 10px;
+    z-index: 1;
+    color: rgba(0, 0, 0, 0.722);    
+    font-size: 24px; /* You can make the heading more complex by adding styles here */ /*
+}  */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+background: #fff;
+font-family: "Comfortaa", sans-serif;
+position: relative;
+}
+
+* {
+box-sizing: border-box;
+}
+
+.main-content {
+text-align: center;
+text-transform: uppercase;
+scroll-snap-type: y mandatory;
+position: relative;
+height: 100vh;
+overflow-y: scroll;
+}
+
+#hover-id,
+.word,
+h1 {
+cursor: pointer;
+}
+
+.cima {
+    position: relative;
+    height: 70%;
+    top: 0vh;
+}
+.baixo {
+    position: relative;
+    height: 100%;
+    bottom: 0vh
+}
+
+h1 {
+position: relative;
+color: #fff;
+font-family: "Montserrat";
+font: 900 60px ;
+text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+#particles canvas{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+}
+
+.concept-three {
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 45vh;
+    left: 10vw;
+
+    width: 50vw;
+    height: 10vh;
+    transform-origin: top left;
+}
+
+
+#word-id1 {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0;
+    width: 25vw;
+}
+
+#word-id2 {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0;
+    width: 15vw;
+}
+
+#hover-id {
+    flex: 1;
+    display: grid;
+    height: calc(100vh - 50em);
+    grid: repeat(2, 2fr) / 100%;
+    position: relative;
+    /* width: 20vw; */
+    div {
+        position: relative;
+        z-index: 5;
+    }
+    div:nth-child(1):hover ~ h1 {
+        margin-top: -10px;
+    }
+    div:nth-child(2):hover ~ h1 {
+        margin-top: -50px;
+    }
+}
+h1 {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -30px;
+    transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 0;
+}
+
+
+#go-to-museum {
+    transform-origin: top left;
+    position: absolute;
+    top: 45vh;
+    right: 160px;
+    height: 10vh;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif; 
+    cursor: pointer;
+    color: #FFFFFF; 
+    transition: color 0.6s ease; 
+    user-select: 'none';
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+/* Button Text */
+#button-text-go-to-museum {
+font-size: 28px;
+letter-spacing: 2px;
+color: rgba(255, 255, 255, 1); 
+transition: color 0.6s ease;
+}
+
+.button-container:hover {
+background: white;
+}
+
+.button-container:hover #button-text-go-to-museum {
+color: #000;
+}
+
+
+@media (max-width: 768px) {
+    .concept-three {
+        flex-direction: column;
+        top: 35vh;
+        left: 2vh;
+
+        width: 200px;
+        height: 10vh;
+    }
+    h1 {
+        width: 10px;
+    }
+    #hover-id {
+        width: 60vw;
+        height: auto;
+    }
+    #word-id1 {
+        width: 60vw;
+        margin-left: 3vw;
+    }
+    #word-id2 {
+        width: 200px;
+        margin-left: 3vw;
+    }
+    #go-to-museum {
+        top: 60vh;
+        right: -7vw;
+        height: 10vh;
+        width: 60%;
+    }
+    #button-text-go-to-museum {
+        width: 70%;
+    }
+    #circle-go-to-museum {
+        display: none;
+    }
+  }
+
