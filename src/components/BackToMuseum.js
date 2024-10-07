@@ -20,7 +20,7 @@ const BackToMuseum = () => {
   }
 
   return (
-    <button className='back-to-musem-custom-button' onClick={() => handleNavigateToMuseum('/connected-earth-museum//Museum')}>
+    <button className='back-to-musem-custom-button' onClick={() => handleNavigateToMuseum('/connected-earth-museum/Museum')}>
       Back to Museum
     </button>
   )

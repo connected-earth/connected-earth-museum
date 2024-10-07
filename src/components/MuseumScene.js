@@ -69,12 +69,17 @@ const MuseumScene = React.memo(({onObjectClick, onFinishLine, onPantingClick}) =
   })
   var painting6e7 = new Howl({
     src: ["/connected-earth-museum/audios/painting6e7.mp3"]
-  })
+  });
+
+
+  
 
   // Var to search Paintings
   var searching_paint_right = false;
   var searching_paint_left  = false;
-  var target_painting = 0;
+  const last_index = museum_map?.findIndex((m) => m?.id === location?.state?.id);
+  var target_painting = last_index >= 0 ? last_index :  0;
+
   const stops = [
     0.0, 0.09212480253501004, 0.1498716330718883, 0.27569651786979216,
     0.3339976248921601,  0.4431101356448576, 0.6322420961640312, 

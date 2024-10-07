@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Howl } from 'howler';
 
 import ParticlesComponent from '../components/Particles';
 import ParticlesComponentMobile from '../components/ParticlesMobile';
@@ -10,6 +11,10 @@ import "./Home.css";
 const Home = () => {
   
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  var welcome = new Howl({
+    src: ["/connected-earth-museum/audios/celestial.mp3"],
+    loop: true,
+  })
   
   const navigate = useNavigate();
 
@@ -18,6 +23,7 @@ const Home = () => {
   };
 
   useEffect(() => {
+    welcome.stop();
 
     const goToMuseumButton = document.getElementById('go-to-museum');
 
@@ -31,6 +37,8 @@ const Home = () => {
   }, []); // Added dependency array for useEffect
 
   function onMouseClickGoToMuseum(event) {
+    welcome.volume(0.1);
+    welcome.play();
     navigate('/connected-earth-museum/Museum', { state: { fromHome: true } });
   }
 
