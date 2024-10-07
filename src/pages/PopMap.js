@@ -40,7 +40,7 @@ const PopMap = () => {
         id: 'Home',
       };
 
-      navigate('/Museum', { state: { isOnPainting: true, ...paiting } });
+      navigate('/connected-earth-museum/Museum', { state: { isOnPainting: true, ...paiting } });
     };
     
     const backToMuseumButton = document.getElementById('back-to-museum-button2');

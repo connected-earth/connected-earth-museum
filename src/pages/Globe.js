@@ -165,7 +165,7 @@ const Globe = () => {
         id: 'Home',
       };
 
-      navigate('/Museum', { state: { isOnPainting: true, ...paiting } });
+      navigate('/connected-earth-museum/Museum', { state: { isOnPainting: true, ...paiting } });
     };
     
     const backToMuseumButton = document.getElementById('back-to-home-button');

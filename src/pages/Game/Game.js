@@ -11,7 +11,7 @@ const questions = [
     title: 'Where does most of the population live today?',
     route: {
       text: 'for information about this subject check this link',
-      path: '/slides/slide_1'
+      path: '/connected-earth-museum/slides/slide_1'
     },
     options: [
       {
@@ -36,7 +36,7 @@ const questions = [
     title: 'What causes orange / red sunsets?',
     route: {
       text: 'for information about this subject check this link',
-      path: '/slides/slide_1'
+      path: '/connected-earth-museum/slides/slide_1'
     },
     options: [
       {
@@ -61,7 +61,7 @@ const questions = [
     title: 'What is the problem with rising temperatures?',
     route: {
       text: 'for information about this subject check this link',
-      path: '/slides/slide_1'
+      path: '/connected-earth-museum/slides/slide_1'
     },
     options: [
       {
@@ -86,7 +86,7 @@ const questions = [
     title: 'How to identify wild fires by satellites',
     route: {
       text: 'for information about this subject check this link',
-      path: '/slides/slide_2'
+      path: '/connected-earth-museum/slides/slide_2'
     },
     options: [
       {
@@ -111,7 +111,7 @@ const questions = [
     title: 'What can we do to combat global warming?',
     route: {
       text: 'for information about this subject check this link',
-      path: '/slides/slide_3'
+      path: '/connected-earth-museum/slides/slide_3'
     },
     options: [
       {
@@ -197,13 +197,13 @@ const Game = () => {
   
     // Create image objects
     const centralBallImage = new Image(150, 150);
-    centralBallImage.src = '/images/game/earth.svg'; // Path to your central ball image
+    centralBallImage.src = '/connected-earth-museum/images/game/earth.svg'; // Path to your central ball image
   
     const orbitingBallImage = new Image(75, 75);
-    orbitingBallImage.src = '/images/game/tornado.svg'; // Path to your central ball image
+    orbitingBallImage.src = '/connected-earth-museum/images/game/tornado.svg'; // Path to your central ball image
   
     const orbitingBallImage2 = new Image(75, 75);
-    orbitingBallImage2.src = '/images/game/industry.svg'; // Path to your central ball image
+    orbitingBallImage2.src = '/connected-earth-museum/images/game/industry.svg'; // Path to your central ball image
   
     // Animation loop
     const animate = () => {
@@ -329,7 +329,7 @@ const Game = () => {
     if (life === 0) {
       const id = location?.state?.id || 'Painting_6';
 
-      navigate('/game/lost', { state: { answers, id } });
+      navigate('/connected-earth-museum/game/lost', { state: { answers, id } });
     }
   }, [answers, life, navigate]);
 
@@ -386,7 +386,7 @@ const Game = () => {
 
       const id = location?.state?.id || 'Painting_6';
 
-      navigate('/game/won', { state: {  id  } });
+      navigate('/connected-earth-museum/game/won', { state: {  id  } });
     }
   };
 

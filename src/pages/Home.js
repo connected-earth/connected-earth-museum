@@ -31,7 +31,7 @@ const Home = () => {
   }, []); // Added dependency array for useEffect
 
   function onMouseClickGoToMuseum(event) {
-    navigate('/Museum', { state: { fromHome: true } });
+    navigate('/connected-earth-museum/Museum', { state: { fromHome: true } });
   }
 
   const letters = "CONNECTED "; // The string for the letters to be displayed

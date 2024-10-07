@@ -541,7 +541,7 @@ const MuseumScene = React.memo(({onObjectClick, onFinishLine, onPantingClick}) =
     const loader = new GLTFLoader(loadingManager);
    
     // Load Museum Model
-    loader.load('/models/GLB/MuseumFinal.glb', (gltf) => {
+    loader.load('/connected-earth-museum/models/GLB/MuseumFinal.glb', (gltf) => {
       museumModel = gltf.scene;
 
       museumModel.traverse((child) => {
@@ -1039,7 +1039,7 @@ const MuseumScene = React.memo(({onObjectClick, onFinishLine, onPantingClick}) =
 
 
   function onMouseClickBackHome(event) {
-    navigate('/');
+    navigate('/connected-earth-museum/');
   }
 
   function onMouseHoverPainting(event) {

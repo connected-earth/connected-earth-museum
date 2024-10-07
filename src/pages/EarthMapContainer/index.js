@@ -18,7 +18,7 @@ const EarthMapContainer = ({ slideId }) => {
           id: 'Home',
         };
 
-        navigate('/Museum', { state: { isOnPainting: true, ...paiting } });
+        navigate('/connected-earth-museum/Museum', { state: { isOnPainting: true, ...paiting } });
     }
     
     return (
