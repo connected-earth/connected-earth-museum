@@ -372,7 +372,7 @@ const Globe = () => {
           textDisplay.innerHTML = `
           <p>This data comes from the <a href="https://www2.acom.ucar.edu/mopitt" target="_blank">MOPITT</a> dataset.</p>
           <br/>
-          <p>The concentration of carbon monoxide (CO) in Earth's atmosphere has been increasing due to human activities, though recent measurements show a stabilization. The full effects of increased CO are not fully understood, but it is believed to reduce the removal of certain trace gases like methane, which may further intensify global warming and affect the ozone layer. MOPITT (Measurement of Pollution in the Troposphere) collects data on CO and methane, helping to improve understanding of global tropospheric chemistry, its interaction with the environment, and its role in climate.</p>
+          <p>The concentration of carbon monoxide (CO) in Earth's atmosphere has been increasing due to human activities, though recent measurements show a stabilization. The full effects of increased CO are not fully understood, but it is believed to reduce the removal of certain trace gases like methane, which may further intensify global warming and affect the ozone layer. MOPITT (Measurement of Pollution in the Troposphere) collects data on CO and methane, helping improve understanding of global tropospheric chemistry, its interaction with the environment, and its role in climate.</p>
           `;
           break;
            

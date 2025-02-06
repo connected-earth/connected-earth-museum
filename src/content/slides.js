@@ -54,7 +54,7 @@ export const page_slides = {
         },
         title: "Pollution",
         description: [
-          "Along with CO2 ou means of production generate other gases that pollute the air, such as  carbon monoxide and sulfur dioxide, as well as particulate matter. This pollution is detrimental to our health, and causes many different effects. In heavily polluted cities sunrises and sunsets tend to be more red and orange, due to scattering of light."
+          "Along with CO2, our means of production generate other gases that pollute the air, such as carbon monoxide and sulfur dioxide, as well as particulate matter. This pollution is detrimental to our health, and causes many different effects. In heavily polluted cities sunrises and sunsets tend to be more red and orange, due to scattering of light."
         ],
       },
       {
@@ -78,7 +78,7 @@ export const page_slides = {
         title: "Rising temperature",
         description: [
           "Temperature variation is a common theme throughout Earth’s history, and is strongly related with the amount of CO2 in the atmosphere.",
-          "However, human carbon emissions have accelerated this process to alarming rates. This heat means there is more energy in the stored up in the world.",
+          "However, human carbon emissions have accelerated this process to alarming rates. This heat means there is more energy stored up in the world.",
         ],
       },  
       {
@@ -95,7 +95,7 @@ export const page_slides = {
         ],
         title: "Where does this energy go?",
         description: [
-          "As climate changes, more and more natural hazards such as storms, extreme heat, floods, droughts and wildfires occur. This is a danger for the health of the population, leading factors like: to mass destruction, disease and disruption of food systems.",
+          "As climate changes, more and more natural hazards such as storms, extreme heat, floods, droughts and wildfires occur. This is a danger for the health of the population, leading to factors like: mass destruction, disease and disruption of food systems.",
         ],
       },
       {
@@ -166,7 +166,7 @@ export const page_slides = {
         ],
         title: "Droughts and Fire",
         description: [
-         "One of the reasons for the rise in amount of fire, is the dry weather, which has also been increasing in the past years. This is strongly related with Climate Change, because higher temperatures make water evaporate faster, which makes already dry regions dryer."
+         "One of the reasons for the rise in amount of fires is the dry weather, which has also been increasing in the past years. This is strongly related with Climate Change, because higher temperatures make water evaporate faster, which makes already dry regions dryer."
         ],
       },
       {
@@ -183,7 +183,7 @@ export const page_slides = {
         ],
         title: "But what causes the fires?",
         description: [
-          "The World-Wide Fund report from 2020 indicates that 75% of wildfires are caused by humans, through processes like road construction, conversion of land to agriculture, urbanisation, and domestic livestock grazing. The dry weather then helps to spread the fires, which become hard to contain."
+          "The World-Wide Fund report from 2020 indicates that 75% of wildfires are caused by humans, through processes like road construction, conversion of land to agriculture, urbanization, and domestic livestock grazing. The dry weather then helps to spread the fires, which become hard to contain."
         ],
       },
       {
@@ -224,7 +224,7 @@ export const page_slides = {
         ],
         title: "Air Quality",
         description: [
-          "Air quality monitors detect pollutants using sensors. Some use lasers to measure particulate matter, while others use satellite imaging to measure energy reflected or emitted by Earth. From this a number can be assigned to so it’s possible to monitor air quality and its effects on health.",
+          "Air quality monitors detect pollutants using sensors. Some use lasers to measure particulate matter, while others use satellite imaging to measure energy reflected or emitted by Earth. From this, a number can be assigned so it’s possible to monitor air quality and its effects on health.",
         ],
       },
     ],
@@ -238,7 +238,7 @@ export const page_slides = {
         graphs: [],
         title: "Everything is rising",
         description: [
-          "From the other sections, we see how Pollution and CO2 emissions produced by humanity cause a temperature increase, which in turn increases the amount of natural hazards that affect all the population. Meanwhile, deforestation is still not decreasing, and some methods of achieving that, such as wildfires that can spread and affect many places."
+          "From the other sections, we see how Pollution and CO2 emissions produced by humanity cause a temperature increase, which in turn increases the amount of natural hazards that affect all the population. Meanwhile, deforestation is still not decreasing, and neither are some methods of achieving that, such as wildfires that can spread and affect many places."
         ],
       },
       {
@@ -250,7 +250,7 @@ export const page_slides = {
         graphs: [],
         title: "What can we do?",
         description: [
-          "To prevent these issues from keep getting worse, it’s important to combat Global Warming in many fronts, such as reducing carbon footprint, creating and enforcing regulations for deforestations and use of wildfire and switching ou energy matrix to renewable sources."
+          "To prevent these issues from keep getting worse, it’s important to combat Global Warming in many fronts, such as reducing carbon footprint, creating and enforcing regulations for deforestations and use of wildfire and switching our energy matrix to renewable sources."
         ],
       },
       {
@@ -265,18 +265,6 @@ export const page_slides = {
           "Individually we can help with simple actions, like recycling, being conscious about water use and using public transportation. Also raising awareness for theses issues can aid in creating a global united front to help save our planet and ourselves."
         ],
       },
-      {
-        type: 2,
-        background: {
-          url: "/connected-earth-museum/images/slides/backgrounds/connected_earth.png",
-          alt: "What can we do?",
-        },
-        graphs: [],
-        title: "What can we do?",
-        description: [
-          "Individually we can help with simple actions, like recycling, being conscious about water use and using public transportation. Also raising awareness for theses issues can aid in creating a global united front to help save our planet and ourselves."
-        ],
-      }
     ],
   };
   

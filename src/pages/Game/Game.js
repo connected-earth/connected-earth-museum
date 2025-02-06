@@ -119,7 +119,7 @@ const questions = [
         correct: false
       },
       {
-        text: 'by reducing our carbon footprint',
+        text: 'By reducing our carbon footprint',
         correct: true
       },
       {

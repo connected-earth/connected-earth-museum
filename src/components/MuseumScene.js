@@ -944,7 +944,7 @@ const MuseumScene = React.memo(({onObjectClick, onFinishLine, onPantingClick}) =
               rotation: painting.rotation,
               id: painting.id,
             },
-          "One of the gravest problems our planet faces is uncontrolled wildfires. We will now take a look at how these incidents are spread throughout our planet. Click on the painting to view more. ",
+          "One of the gravest problems our planet faces is uncontrolled wildfires. We will now take a look at how these incidents are spread throughout our planet. Click on the painting to view more.",
             painting3,
             14000,
             "/connected-earth-museum/map"
@@ -983,7 +983,7 @@ const MuseumScene = React.memo(({onObjectClick, onFinishLine, onPantingClick}) =
               rotation: painting.rotation,
               id: painting.id,
             },
-          " Let’s take a break from looking at data. How about a game to test your knowledge? Our planet is in need of your help, and you must answer questions correctly to help it. Click on the painting to play!",
+          "Let’s take a break from looking at data. How about a game to test your knowledge? Our planet is in need of your help, and you must answer questions correctly to help it. Click on the painting to play!",
             painting5,
             13000,
             "/connected-earth-museum/game"

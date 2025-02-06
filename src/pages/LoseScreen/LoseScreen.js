@@ -59,7 +59,7 @@ const LoseScreen = () => {
           fontSize: '1em',  textAlign: 'left', color: '#fff', fontWeight: 700,
           gap: 10
         }}>
-          <h2>Visite essas áreas para aprender mais sobre a situação as perguntas feitas</h2>
+          <h2>Visit this areas to learn more about the questions asked</h2>
           {routes.map((route) => (
             <span style={{ fontSize: '1em',  textAlign: 'left', color: '#fff', cursor: 'pointer', fontWeight: 600, textDecoration: 'underline' }} onClick={() => handleNavigateToMuseum(route.path)}>{route.text}</span>
           ))}
