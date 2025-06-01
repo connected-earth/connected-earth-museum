@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 24px;
+    background: url('../../assets/images/game-background.jpg') no-repeat center / cover;
+}
+
+.game-container h2 {
+    text-align: center;
+}
+
+.questions {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff
+}
+
+.question div {
+    position: relative;
+}
+
+.question div img {
+    position: absolute;
+    left: -120px;
+    animation: astronaut 5s infinite;
+}
+
+
+.question div div {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.questions button {
+    flex: calc(50% - 20px);
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 8px 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    height: 70px;
+}
+
+.questions button:hover {
+    background: #fff;
+    color: purple;
+}
+
+.hidden-question {
+    display: none;
+}
+
+.life {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+
+.shake {
+    animation: tilt-n-move-shaking 0.25s infinite;
+    pointer-events: none;
+}
+
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(3px, 3px) rotate(3deg); }
+    50% { transform: translate(0, 0) rotate(0deg); }
+    75% { transform: translate(-3px, 3px) rotate(-3deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes astronaut {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(0, 10px)  }
+    50% { transform: translate(0, 0)  }
+    75% { transform: translate(0, 10px) }
+    100% { transform: translate(0, 0) }
+}

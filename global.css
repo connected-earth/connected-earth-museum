@@ -1,0 +1,61 @@
+/* Stacking buttons vertically */
+#button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between buttons */
+    position: absolute; /* Keeps it positioned on the left */
+    top: 1.2rem;
+    left: 1rem;
+}
+
+#button-container a {
+    position: relative; /* Remove absolute positioning */
+    font-family: 'Arial', sans-serif;
+    padding: 12px 20px;
+    background-color: rgba(25, 25, 25, 0.5);
+    letter-spacing: 2px;
+    color: rgba(245, 245, 245, 0.8);
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 5px; /* Makes the button more rounded */
+    overflow: hidden;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.1s ease;
+    width: fit-content;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+
+/* Text becomes lighter on hover */
+#button-container a:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+/* Moving circle animation for main buttons */
+#button-container a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease, left 0.4s ease;
+    z-index: 0;
+}
+
+#button-container a:hover::before {
+    width: 200%;
+    height: 200%;
+    left: 70%;
+}
+
+/* Feedback after click for main buttons */
+#button-container a:active {
+    transform: scale(0.95);
+}

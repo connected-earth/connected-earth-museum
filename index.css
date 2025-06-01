@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Comfortaa", sans-serif;
+  text-align: center;
+  background-color: #21201f;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;  /* Adjust the container width as needed */
+  padding: 80px;
+  height: 80vh;  /* Container height, can be adjusted */
+}
+
+#canvas {
+  z-index: 1;
+  position: relative;
+}
+
+/* Text Overlay */
+.text-overlay {
+  position: absolute;
+  font-size: 23px;
+  transform: translate(-8%, 0%);
+  font-family: Montserrat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  z-index: 2; 
+}
+
+.text-overlay span {
+  transition: transform 0.3s ease;
+  margin: 0 8px; /* Space between letters */
+  animation: oscillate 1s infinite; /* Oscillation animation */
+}
+
+.text-overlay span:hover {
+  font-weight: bold;
+}
+
+/* Oscillation Animation */
+@keyframes oscillate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Museum Button */
+button {
+  background-color: #282828;
+  height: 10vh;
+  width: 40%;  /* Adjust the width of the button as needed */
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+/* Click effect */
+button:active {
+  transform: scale(0.95);
+}
+
+button:active::after {
+  transform: scale(10);
+  opacity: 0;
+}
+
+
+@media (max-width: 1032px) {
+  .container {
+    width: 80%;  /* Adjust the container width for small screens */
+    flex-direction: column;  /* Stack elements vertically */
+    justify-content: center; /* Center align items */
+    align-items: center; /* Center align items */
+    position: relative;  /* Ensure button stays relative to container */
+  }
+  button {
+    font-size: 16px;
+    width: 50%;  /* Adjust button width for small screens */
+    margin-top: 50px;  /* Space between the canvas and button */
+    z-index: 3;
+    position: relative;  /* Make button relative to the container when stacked */
+    left: auto;  /* Remove absolute left alignment */
+  }
+
+  /* Make text overlay smaller on small screens */
+  .text-overlay {
+    width: 50%;
+    transform: translate(-5%, -150%);
+  }
+}
+
+@media (max-width: 480px) {
+  .text-overlay {
+    transform: translate(-5%, -150%);
+  }
+}
+

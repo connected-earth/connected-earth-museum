@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Style for buttons */
+button {
+    position: relative; /* Remove absolute positioning */
+    font-family: 'Arial', sans-serif;
+    padding: 12px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    color: rgba(245, 245, 245, 0.8);
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 5px; /* Makes the button more rounded */
+    overflow: hidden;
+    user-select: none;
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.1s ease;
+    width: fit-content;
+}
+
+.tour-btn{
+  background-color: rgba(175, 175, 175, 0.9);
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0.2s ease, background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Stacking buttons vertically */
+#button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between buttons */
+    position: absolute; /* Keeps it positioned on the left */
+    top: 1.2rem;
+    left: 1rem;
+}
+
+#button-container button:last-child {
+    display: none;
+}
+
+/* Text becomes lighter on hover */
+button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+/* Moving circle animation for main buttons */
+button::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease, left 0.2s ease;
+    z-index: 0;
+}
+
+button:hover::before {
+    width: 200%;
+    height: 200%;
+    left: 70%;
+}
+
+/* Feedback after click for main buttons */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Styles for the right-side text */
+#top-right-text {
+    position: fixed; /* Keeps it on the right */
+    top: 1.6rem;
+    right: 1rem;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    z-index: 100;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.0vw;
+    user-select: none;
+    white-space: nowrap;
+}
+
+/* Nav-button Styles */
+.nav-button {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;  /* Ensures the pseudo-element stays within the button */
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Nav-button Hover Effect: Background White, Text Black + Slight Increase in Size */
+.nav-button:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-50%) scale(1.1); /* Increase size slightly */
+}
+
+/* Moving circle animation for nav-buttons */
+.nav-button::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;  /* Center the ripple in the circular button */
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease;
+    z-index: -1;  /* Places it behind the button text */
+}
+
+.nav-button:hover::before {
+    width: 200%;
+    height: 200%;
+}
+
+/* Click feedback for nav-buttons: Shrink momentarily */
+.nav-button:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+/* Left button styles */
+#left-button {
+    left: 20px;
+}
+
+/* Right button styles */
+#right-button {
+    right: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-button {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        line-height: 50px;
+    }
+    #left-button {
+        left: 10px;
+    }
+    #right-button {
+        right: 10px;
+    }
+}
+
+
+/* Loading Screen */
+
+/* Basic styling for the loading screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 32, 31, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    pointer-events: all;
+    transition: opacity 0.5s ease-out;
+}
+
+.spinner {
+    border: 4px solid rgba(250, 250, 250, 0.5);
+    border-top: 4px solid #000000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide the loading screen when the page has finished loading */
+#loading-screen.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#legend {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  width: 70%;
+  transform: translateX(-50%);
+  font-family: Arial, sans-serif;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(245, 245, 245, 0.8);
+  text-align: justify;
+  /* Note: text-justify works in some browsers only */
+  text-justify: inter-word;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+}
+

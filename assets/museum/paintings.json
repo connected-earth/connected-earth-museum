@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Painting_1",
+    "path": "/connected-earth-museum-v2/Paintings/Globe/globe.html",
+    "audioID": "globe",
+    "audioUrl": "/connected-earth-museum-v2/assets/billy_audios/globe.mp3",
+    "distance": 4
+  },
+  {
+    "name": "Painting_2",
+    "path": "/connected-earth-museum-v2/Paintings/Slides/slide_1.html",
+    "audioID": "slide1",
+    "audioUrl": "/connected-earth-museum-v2/assets/billy_audios/slide1.mp3",
+    "distance": 4
+  },
+  {
+    "name": "Painting_3",
+    "path": "/connected-earth-museum-v2/Paintings/FireMap/firemap.html",
+    "audioID": "firemap",
+    "audioUrl": "/connected-earth-museum-v2/assets/billy_audios/firemap.mp3",
+    "distance": 4
+  },
+  {
+    "name": "Painting_5",
+    "path": "/connected-earth-museum-v2/Paintings/PopMap/popmap.html",
+    "audioID": "popmap",
+    "audioUrl": "/connected-earth-museum-v2/assets/billy_audios/popmap.mp3",
+    "distance": 4
+  },
+  {
+    "name": "Painting_6",
+    "path": "/connected-earth-museum-v2/Paintings/Game/game.html",
+    "audioID": "game",
+    "audioUrl": "/connected-earth-museum-v2/assets/billy_audios/game.mp3",
+    "distance": 4
+  },
+  {
+    "name": "Painting_7",
+    "path": "/connected-earth-museum-v2/Paintings/Slides/slide_2.html",
+    "audioID": "slides",
+    "audioUrl": "/connected-earth-museum-v2/assets/billy_audios/slides.mp3",
+    "distance": 4
+  },
+  {
+    "name": "Painting_8",
+    "path": "/connected-earth-museum-v2/Paintings/Slides/slide_3.html",
+    "audioID": "slides",
+    "audioUrl": "/connected-earth-museum-v2/assets/billy_audios/slides.mp3",
+    "distance": 4
+  }
+]
